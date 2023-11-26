@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MeapleHeap - Dashboard</title>
+
+	<!-- Custom Css -->
+	<link href="css/wallet.css" rel="stylesheet" />
+
+	<!-- Font Awesome -->
+	<link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+	<link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
+	<link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
+	<!-- support v4 icon references/syntax -->
+	<link href="assets/fontawesome/css/v4-font-face.css" rel="stylesheet" />
+
+</head>
+<body>
+	<header>
+		<div class="display-sm-block display-flex display-justify-content-between display-align-center padding-5">
+			<div class="logo">
+				<a href="index.html">
+					<img src="assets/img/logo.png" alt="MeapleHeap Logo">
+				</a>
+			</div>
+			<div class="profile-setting display-flex text-centeralize display-align-center display-sm-block">
+				<div class="active-user">
+					<div class="width-100 display-flex display-align-center display-sm-block">
+						<img src="assets/img/profile-pic.png" width="100%" height="100%" alt="Atif">
+					</div>
+				</div>
+				<div class="setting">
+					<span class="text-no-wrap padding-left-1">Hello, Atif </span> | 
+					<span class="_profile cursor-pointer"> Setting 
+						<ul class="profile-link list-style-none background-white">
+		                    <li><a href="profile.html" class="text-decoration-none"><i class='fa fa-user-circle icon'></i> Profile</a></li>
+		                    <li><a href="wallet.html" class="text-decoration-none"><i class='fa fa-cog icon'></i> Settings</a></li>
+		                    <li><a href="#" class="text-decoration-none"><i class='fa fa-sign-out icon'></i> Logout</a></li>
+		                </ul>
+		            </span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="content">
+            <div class="breadcrumbs">
+            	<span>Home </span><span>/ Wallet</span>
+            </div>
+            <div class="form-content">
+        		<div class="margin-bottom-2">
+        			<div>
+        				<h1>Wallet</h1>
+        				<span>Cards and accounts</span>
+        			</div>
+        		</div>
+        		<div class="upload-file margin-bottom-5">
+        			<div id="drop-area" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)" onclick="handleClick()">
+        				<img src="assets/img/wallet/drag.png">
+					  <p>Click to upload or drag and drop</p>
+					  <input type="file" id="file-input" onchange="handleFileSelect()">
+					</div>
+        		</div>
+        		<div class="payment-card">
+        			<div class="display-flex display-sm-block card-1 padding-1 margin-bottom-2">
+	        			<div class="width-25 sm-width-100">
+	        				<div class="card-img width-100">
+	        					<img src="assets/img/wallet/master.png" class="width-100">
+	        				</div>
+	        			</div>
+	        			<div class="card-detail margin-left-3">
+	        				<h1>Mastercard</h1>
+	        				<p>Credit card ending in **** 1256</p>
+	        				<div class="action">
+	        					<a href="javascript:void(0)" onclick="openModal()" class="text-theme text-decoration-none">Edit</a>
+	        					<a href="javascript:void(0)" class="text-theme text-decoration-none margin-left-4">Remove</a>
+	        				</div>
+	        			</div>
+        			</div>
+
+        			<div class="display-flex display-sm-block card-2 padding-1">
+	        			<div class="width-25 sm-width-100">
+	        				<div class="card-img width-100">
+	        					<img src="assets/img/wallet/visa.png" class="width-100">
+	        				</div>
+	        			</div>
+	        			<div class="card-detail margin-left-3">
+	        				<h1>Visacard</h1>
+	        				<p>Credit card ending in **** 1256</p>
+	        				<div class="action">
+	        					<a href="javascript:void(0)" onclick="openModal()" class="text-theme text-decoration-none">Edit</a>
+	        					<a href="javascript:void(0)" class="text-theme text-decoration-none margin-left-4">Remove</a>
+	        				</div>
+	        			</div>
+        			</div>
+        		</div>
+            </div>
+            <footer>
+                <span>2020 © Influence - Designed by Ahsan Hussain</span>
+            </footer>
+        </div>
+	</section>
+		<!-- Modals -->
+	<!-- Cards Modals -->
+	<div class="custom-modal-container" id="card-modal">
+	  <div class="custom-modal-content width-50 sm-width-100">
+	    <span class="text-theme custom-close-btn" onclick="closeModal()">&times;</span>
+	    <div class="display-align-center display-flex display-justify-between modal-head width-100 margin-bottom-3">
+	    	<span class="heading-4 text-theme">Add a credit or debit card</span>
+	    	<span class="text-theme cursor-pointer heading-4 padding-1" onclick="closeModal()">&times;</span>
+	    </div>
+	    <form action="#" method="post">
+		    <div class="card-modal-details">
+		    	<div class="display-flex width-100 margin-bottom-3">
+		    		<div class="card-number width-50 margin-2">
+		    			<input type="text" name="name" placeholder="Card Name" class="padding-top-3 padding-bottom-3 width-100">
+		    		</div>
+		    		<div class="card-number width-50 margin-2">
+		    			<input type="text" name="number" placeholder="Card Number" class="padding-top-3 padding-bottom-3 width-100">
+		    		</div>
+		    	</div>
+
+		    	<div class="display-flex width-100 margin-bottom-3">
+		    		<div class="card-number width-50 margin-2">
+		    			<input type="date" name="date" placeholder="Expiration date" class="padding-top-3 padding-bottom-3 width-100">
+		    		</div>
+		    		<div class="card-number width-50 margin-2">
+		    			<input type="text" name="number" placeholder="CVC" class="padding-top-3 padding-bottom-3 width-100">
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="card-footers">
+		    	<p>Lorem ipsum is a dummy text</p>
+		    	<img src="assets/img/wallet/cards.svg">
+		    	<div class="buttons">
+		    		<button type="button" class="padding-2 cursor-pointer">Cancel &times</button>
+		    		<button type="button" class="padding-2 background-primary text-white cursor-pointer">Add to cart +</button>
+		    	</div>
+		    </div>
+	    </form>
+	  </div>
+	</div>
+
+
+	<script type="text/javascript" src="js/wallet.js"></script>
+</body>
+</html>
