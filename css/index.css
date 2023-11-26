@@ -454,6 +454,11 @@ body {
     color: white!important;
 }
 
+.text-centeralize{
+    text-align: center;
+}
+
+
 .background-primary{
     background-color: #3498db!important;
 }
