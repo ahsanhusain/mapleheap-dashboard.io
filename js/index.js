@@ -1,10 +1,12 @@
 // Quick Demo JS
 function openModal() {
   document.getElementById('quick-demo').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
   document.getElementById('quick-demo').style.display = 'none';
+  document.body.style.overflow = 'auto';
 }
 
 // Close the modal if the overlay is clicked
@@ -17,10 +19,12 @@ window.onclick = function (event) {
 // price tag
 function openTagModal() {
   document.getElementById('price-tag').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
 }
 
 function closeTagModal() {
   document.getElementById('price-tag').style.display = 'none';
+  document.body.style.overflow = 'auto';
 }
 
 // Close the modal if the overlay is clicked

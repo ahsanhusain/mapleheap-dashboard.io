@@ -187,96 +187,98 @@
 	</div>
 
 	<!-- Price Tag -->
-	<div class="custom-modal-container" id="price-tag">
-	  <div class="custom-modal-content width-75 sm-width-100">
-	    <div class="display-align-center display-flex display-justify-between modal-head width-100">
-	    	<span class="heading-4">Pricing</span>
-	    	<span class="text-theme cursor-pointer heading-4 padding-1" onclick="closeTagModal()">&times;</span>
-	    </div>
-	    <div class="price-tag-description">
-	    	<p class="heading-4 margin-0 margin-top-2">Choose your Plans</p>
-	    	<div class="display-align-center display-sm-block display-flex pkg-duration">
-	    		<div class="width-50 sm-width-100">
-	    			<span>
-	    				Sign up in less then 30 seconds . Try out 7 days free trial Upgrade at anytime, no question, no hastle.
-	    			</span>
-	    		</div>
-	    		<div class="width-50 sm-width-100">
-    			    <div class="columns display-align-center display-flex display-flex-row">
-				      <div class="column display-flex display-justify-end is-12 width-100">
-				        <div class="up-in-toggle">
-				          <input type="radio" id="switch_left" name="switch_2" value="monthly" />
-				          <label for="switch_left">Monthly</label>
-				          <input type="radio" id="switch_right" name="switch_2" value="yearly" checked/>
-				          <label for="switch_right">Yearly</label>
-				        </div>
-				      </div>
-				    </div>
-	    		</div>
-	    	</div>
-	    	<div class="display-flex display-justify-evenly packages">
-	    		<div class="package-1 width-25 padding-5">
-	    			<div class="most-popular">
-	    				<span class="padding-1 text-white padding-left-4 padding-right-4">MOST POPULAR</span>
-	    			</div>
-	    			<span class="heading-2 text-theme">$17  /</span>
-	    			<span class="heading-2">month</span>
-	    			<p class="heading-1 margin-bottom-0">Starter</p>
-	    			<span class="pkg-desc">
-	    				Unleash the power of automation.
-	    			</span>
-	    			<ul class="list-style-none padding-0">
-	    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
-	    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
-	    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
-	    			</ul>
-	    			<div class="choose-plan choose-plan margin-top-5 padding-top-5">
-		    			<button class="padding-3 width-100">Choose plan</button>
+	<div class="custom-modal-container" id="price-tag" style="overflow: auto;">
+		<div class="display-align-center display-flex display-justify-center width-100"  style="height: 100%;">
+		  <div class="custom-modal-content price-custom-modal-content width-75 sm-width-100">
+		    <div class="display-align-center display-flex display-justify-between modal-head width-100">
+		    	<span class="heading-4">Pricing</span>
+		    	<span class="text-theme cursor-pointer heading-4 padding-1" onclick="closeTagModal()">&times;</span>
+		    </div>
+		    <div class="price-tag-description">
+		    	<p class="heading-4 margin-0 margin-top-2">Choose your Plans</p>
+		    	<div class="display-align-center display-sm-block display-flex pkg-duration">
+		    		<div class="width-50 sm-width-100">
+		    			<span>
+		    				Sign up in less then 30 seconds . Try out 7 days free trial Upgrade at anytime, no question, no hastle.
+		    			</span>
 		    		</div>
-	    		</div>
+		    		<div class="width-50 sm-width-100">
+	    			    <div class="columns display-align-center display-flex display-flex-row">
+					      <div class="column display-flex display-justify-end is-12 width-100">
+					        <div class="up-in-toggle">
+					          <input type="radio" id="switch_left" name="switch_2" value="monthly" />
+					          <label for="switch_left">Monthly</label>
+					          <input type="radio" id="switch_right" name="switch_2" value="yearly" checked/>
+					          <label for="switch_right">Yearly</label>
+					        </div>
+					      </div>
+					    </div>
+		    		</div>
+		    	</div>
+		    	<div class="display-flex display-sm-block display-justify-evenly packages">
+		    		<div class="package-1 padding-5 margin-bottom-2">
+		    			<div class="most-popular">
+		    				<span class="padding-1 text-white padding-left-4 padding-right-4">MOST POPULAR</span>
+		    			</div>
+		    			<span class="heading-2 text-theme">$17  /</span>
+		    			<span class="heading-2">month</span>
+		    			<p class="heading-1 margin-bottom-0">Starter</p>
+		    			<span class="pkg-desc">
+		    				Unleash the power of automation.
+		    			</span>
+		    			<ul class="list-style-none padding-0">
+		    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
+		    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
+		    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
+		    			</ul>
+		    			<div class="choose-plan choose-plan margin-top-5 padding-top-5">
+			    			<button class="padding-3 width-100">Choose plan</button>
+			    		</div>
+		    		</div>
 
-	    		<div class="package-2 width-25 padding-5">
-	    			<div class="most-popular">
-	    				<span class="padding-1 text-white padding-left-4 padding-right-4">MOST POPULAR</span>
-	    			</div>
-	    			<span class="heading-2 text-theme">$17  /</span>
-	    			<span class="heading-2">month</span>
-	    			<p class="heading-1 margin-bottom-0">Starter</p>
-	    			<span class="pkg-desc">
-	    				Unleash the power of automation.
-	    			</span>
-	    			<ul class="list-style-none padding-0">
-	    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
-	    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
-	    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
-	    			</ul>
-	    			<div class="choose-plan choose-plan margin-top-5 padding-top-5">
-		    			<button class="padding-3 width-100">Choose plan</button>
+		    		<div class="package-2 padding-5 margin-bottom-2">
+		    			<div class="most-popular">
+		    				<span class="padding-1 text-white padding-left-4 padding-right-4">MOST POPULAR</span>
+		    			</div>
+		    			<span class="heading-2 text-theme">$17  /</span>
+		    			<span class="heading-2">month</span>
+		    			<p class="heading-1 margin-bottom-0">Starter</p>
+		    			<span class="pkg-desc">
+		    				Unleash the power of automation.
+		    			</span>
+		    			<ul class="list-style-none padding-0">
+		    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
+		    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
+		    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
+		    			</ul>
+		    			<div class="choose-plan choose-plan margin-top-5 padding-top-5">
+			    			<button class="padding-3 width-100">Choose plan</button>
+			    		</div>
 		    		</div>
-	    		</div>
 
-	    		<div class="package-3 width-25 padding-5">
-	    			<div class="most-popular">
-	    				<span class="padding-1 text-white padding-left-4 padding-right-4">MOST POPULAR</span>
-	    			</div>
-	    			<span class="heading-2 text-theme">$17  /</span>
-	    			<span class="heading-2">month</span>
-	    			<p class="heading-1 margin-bottom-0">Starter</p>
-	    			<span class="pkg-desc">
-	    				Unleash the power of automation.
-	    			</span>
-	    			<ul class="list-style-none padding-0">
-	    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
-	    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
-	    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
-	    			</ul>
-	    			<div class="choose-plan choose-plan margin-top-5 padding-top-5">
-		    			<button class="padding-3 width-100">Choose plan</button>
+		    		<div class="package-3 padding-5 margin-bottom-2">
+		    			<div class="most-popular">
+		    				<span class="padding-1 text-white padding-left-4 padding-right-4">MOST POPULAR</span>
+		    			</div>
+		    			<span class="heading-2 text-theme">$17  /</span>
+		    			<span class="heading-2">month</span>
+		    			<p class="heading-1 margin-bottom-0">Starter</p>
+		    			<span class="pkg-desc">
+		    				Unleash the power of automation.
+		    			</span>
+		    			<ul class="list-style-none padding-0">
+		    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
+		    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
+		    				<li><i class="fa fa-check-circle text-theme"></i> Lorem Ipsum</li>
+		    			</ul>
+		    			<div class="choose-plan choose-plan margin-top-5 padding-top-5">
+			    			<button class="padding-3 width-100">Choose plan</button>
+			    		</div>
 		    		</div>
-	    		</div>
-	    	</div>
-	    </div>
-	  </div>
+		    	</div>
+		    </div>
+		  </div>
+		</div>
 	</div>
 
 
