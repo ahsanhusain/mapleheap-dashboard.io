@@ -454,6 +454,10 @@ body {
     color: white!important;
 }
 
+.text-black{
+    color: #4B4B4D!important;
+}
+
 .text-centeralize{
     text-align: center;
 }
