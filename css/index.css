@@ -6,7 +6,7 @@ body {
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color: #F8FAFB!important;
+    background-color: #F5FCFF!important;
     color: #4B4B4D;
 }
 .font-inter{
@@ -939,10 +939,12 @@ body {
 
 .menu{
     border-radius: 50px;
+    box-shadow: 0px 5px 10.899999618530273px 0px #00000026;
 }
 
 .service{
     border-radius: 20px!important;
+    box-shadow: 0px 4px 34.400001525878906px 0px #0000000D;
 }
 
 .service-heading{
@@ -1105,4 +1107,31 @@ img.service-btn{
 }
 img.service-btn:hover{
   transform: scale(1.2);
+}
+
+/*ribbon*/
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ribbon {
+  position: absolute;
+  top: 23px;
+  left: -47px;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px 46px;
+  font-size: 14px;
+  font-weight: bold;
+  transform: rotate(-45deg);
 }
