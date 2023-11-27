@@ -883,7 +883,9 @@ body {
 }
 
 
-
+.text-action{
+  color: #2196F3;
+}
 /*header*/
 .active-user > div:first-of-type {
   width:40px;
@@ -944,11 +946,11 @@ body {
 }
 
 .service-heading{
-    color: #00E9D8!important;
+    color: #016A99!important;
 }
 
 .service-description p{
-    min-height: 50%;
+    min-height: 35%;
 }
 .service-status p{
     color: #FC544B!important;
@@ -1097,4 +1099,10 @@ body {
 }
 ._profile{
     position: relative;
+}
+img.service-btn{
+  transition: transform .2s;
+}
+img.service-btn:hover{
+  transform: scale(1.2);
 }
